@@ -25,6 +25,7 @@ export const fixMapping = {
 452: "PartyRole",
 762: "SecuritySubType",
 55: "Symbol",
+//#endregion
 
 //#region standard header
   8: "BeginString",
