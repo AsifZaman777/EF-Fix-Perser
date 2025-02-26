@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ParseContext } from "../context/ParseContext";
+import { fixMapping } from "../utils/FixMapping";
+import { valueMapping } from "../utils/ValueDescMapping";
 
 const ParseSection = () => {
   const { parsedData } = useContext(ParseContext);
@@ -73,9 +75,6 @@ const ParseSection = () => {
               <th className="py-2 px-4 border-b border-gray-600 text-left">
                 ClientOrderID
               </th>
-              <th className="py-2 px-4 border-b border-gray-600 text-left">
-                Detail
-              </th>
             </tr>
           </thead>
           <tbody>
@@ -86,7 +85,6 @@ const ParseSection = () => {
               <td className="py-2 px-4">{messageInfo.target}</td>
               <td className="py-2 px-4">{messageInfo.message}</td>
               <td className="py-2 px-4">{messageInfo.ClOrdID}</td>
-              <td className="py-2 px-4">{messageInfo.detail}</td>
             </tr>
           </tbody>
         </table>
@@ -116,9 +114,9 @@ const ParseSection = () => {
             {parsedData.map((data, index) => (
               <tr key={index} className="border-b border-gray-600">
                 <td className="py-2 px-4">{data.tag}</td>
-                <td className="py-2 px-4">{data.tagDescription}</td>
+                <td className="py-2 px-4">{fixMapping[data.tag] || "N/A"}</td>
                 <td className="py-2 px-4">{data.value}</td>
-                <td className="py-2 px-4">{data.valueDescription}</td>
+                <td className="py-2 px-4">{valueMapping[data.value] || "N/A"}</td>
               </tr>
             ))}
           </tbody>
