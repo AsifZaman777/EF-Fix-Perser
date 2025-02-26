@@ -4,7 +4,7 @@ import { ParseContext } from "../context/ParseContext";
 const ParseSection = () => {
   const { parsedData } = useContext(ParseContext);
 
-  //similar data 
+  //similar data
   const messageInfo = {
     time: parsedData.find((data) => data.tag === "52")?.value || "N/A",
     sender: parsedData.find((data) => data.tag === "49")?.value || "N/A",
@@ -17,7 +17,9 @@ const ParseSection = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-60 mt-5">
       {/* Left Table */}
       <div className="bg-gray-900 border border-gray-700 p-5 rounded-md shadow-md">
-        <p className="mb-3 text-lg text-green-300 font-semibold">Message Info</p>
+        <p className="mb-3 text-lg text-green-300 font-semibold">
+          Message Info
+        </p>
         <table className="min-w-full bg-gray-800 text-white text-xs rounded-md">
           <thead>
             <tr className="bg-gray-700 text-gray-300">
@@ -56,7 +58,7 @@ const ParseSection = () => {
 
       {/* Right Table */}
       <div className="bg-gray-900 border border-gray-700 p-5 rounded-md shadow-md">
-      <p className="mb-3 text-lg text-green-300 font-semibold">Parsed data</p>
+        <p className="mb-3 text-lg text-green-300 font-semibold">Parsed data</p>
         <table className="min-w-full bg-gray-800 text-white text-xs rounded-md">
           <thead>
             <tr className="bg-gray-700 text-gray-300">
