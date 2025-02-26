@@ -27,6 +27,36 @@ export const fixMapping = {
 55: "Symbol",
 //#endregion
 
+//#region cancel order
+11: "ClOrdID",
+37: "OrderID",
+41: "OrigClOrdID",
+38: "OrderQty",
+54: "Side",
+60: "TransactTime",
+// #endregion
+
+//#region replace order
+11: "ClOrdID",
+37: "OrderID",
+41: "OrigClOrdID",
+1: "Account",
+529: "OrderRestrictions",
+18: "ExecInst",
+38: "OrderQty",
+40: "OrdType",
+44: "Price",
+54: "Side",
+60: "TransactTime",
+110: "MinQty",
+59: "TimeInForce",
+432: "ExpireDate",
+126: "ExpireTime",
+236: "Yield",
+1138: "DisplayQty",
+58: "Text",
+
+
 //#region standard header
   8: "BeginString",
   9: "BodyLength",

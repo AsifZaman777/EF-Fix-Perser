@@ -14,6 +14,9 @@
 /// Asif Zaman  28-Feb-2025 [FEATURE] Created ParseContext file to create the context for the parsed data
 /// Asif Zaman  01-Mar-2025 [FEATURE] ParseSection file to display the parsed data
 /// Asif Zaman  03-Mar-2025 [FEATURE] New Order mapping
+/// Asif Zaman  04-Mar-2025 [FEATURE] Order Cancel mapping
+/// Asif Zaman  05-Mar-2025 [FEATURE] Order Replace mapping
+
 /// Asif Zaman  02-Mar-2025 [FEATURE] Standard Header mapping
 /// Asif Zaman  05-Mar-2025 [FEATURE] Standard Trailer mapping
 
