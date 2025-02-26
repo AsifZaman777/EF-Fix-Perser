@@ -116,7 +116,7 @@ const ParseSection = () => {
                 <td className="py-2 px-4">{data.tag}</td>
                 <td className="py-2 px-4">{fixMapping[data.tag] || "N/A"}</td>
                 <td className="py-2 px-4">{data.value}</td>
-                <td className="py-2 px-4">{valueMapping[data.value] || "N/A"}</td>
+                <td className="py-2 px-4">{valueMapping[data.value] || "-"}</td>
               </tr>
             ))}
           </tbody>
