@@ -13,6 +13,36 @@ const ParseSection = () => {
     ClOrdID: parsedData.find((data) => data.tag === "11")?.value || "N/A",
   };
 
+  function processTime(time) {
+    const timeStr = time.slice(9); // "00:40:36.902"
+
+    if (!timeStr.includes(":")) {
+      return "Invalid time format";
+    }
+
+    let [hours, minutes, seconds = "00.000"] = timeStr.split(":");
+    let [sec, milliseconds = "000"] = seconds.split(".");
+
+    hours = parseInt(hours, 10);
+
+    const period = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12 || 12; // Convert 0 to 12 for AM
+
+    const formattedTime = `${hours}:${minutes}:${sec}.${milliseconds} ${period}`;
+
+    return formattedTime;
+  }
+
+  function processDate(time) {
+    const date = time.slice(0, 8); // "20250224"
+
+    //just use hiphen to separate the date
+    const formattedDate = `${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(
+      6
+    )}`;
+    return formattedDate;
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-60 mt-5">
       {/* Left Table */}
@@ -24,7 +54,10 @@ const ParseSection = () => {
           <thead>
             <tr className="bg-gray-700 text-gray-300">
               <th className="py-2 px-4 border-b border-gray-600 text-left">
-                Time
+                Sending Date
+              </th>
+              <th className="py-2 px-4 border-b border-gray-600 text-left">
+                Sending Time
               </th>
               <th className="py-2 px-4 border-b border-gray-600 text-left">
                 Sender
@@ -45,7 +78,8 @@ const ParseSection = () => {
           </thead>
           <tbody>
             <tr className="border-b border-gray-600">
-              <td className="py-2 px-4">{messageInfo.time}</td>
+              <td className="py-2 px-4">{processDate(messageInfo.time)}</td>
+              <td className="py-2 px-4">{processTime(messageInfo.time)}</td>
               <td className="py-2 px-4">{messageInfo.sender}</td>
               <td className="py-2 px-4">{messageInfo.target}</td>
               <td className="py-2 px-4">{messageInfo.message}</td>
