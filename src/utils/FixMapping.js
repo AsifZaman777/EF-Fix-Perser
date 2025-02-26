@@ -25,6 +25,14 @@ export const fixMapping = {
   122: "OrigSendingTime",
   347: "MessageEncoding",
   369: "LastMsgSeqNumProcessed",
-  10: "CheckSum",
 //#endregion
+
+//#region standard trailer
+10: "CheckSum",
+//#endregion
+
+
+
+
+
 };
