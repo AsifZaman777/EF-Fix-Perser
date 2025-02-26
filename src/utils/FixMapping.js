@@ -87,6 +87,16 @@ export const fixMapping = {
 10: "CheckSum",
 //#endregion
 
+//#region Logon
+98: "EncryptMethod",
+108: "HeartBtInt",
+141: "ResetSeqNumFlag",
+553: "Username",
+554: "Password",
+1137: "DefaultApplVerID",
+58: "Text",
+//#endregion
+
 
 
 
