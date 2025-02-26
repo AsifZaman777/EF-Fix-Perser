@@ -46,7 +46,7 @@ const ParseSection = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-60 mt-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-60 mt-5 mb-5">
       {/* Left Table */}
       <div className="bg-gray-900 border border-gray-700 p-5 rounded-md shadow-md">
         <p className="mb-3 text-lg text-green-300 font-semibold">

@@ -13,7 +13,7 @@ const InputSection = () => {
       tag: match[1],
       value: match[2],
       tagDescription: fixMapping[match[1]] || "Unknown",
-      valueDescription: "Description for " + match[2] // Placeholder for value description
+      valueDescription: "-"
     }));
     setParsedData(data);
   };

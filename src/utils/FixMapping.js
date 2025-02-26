@@ -1,6 +1,31 @@
 
 
 export const fixMapping = {
+
+//#region new order
+11: "ClOrdID",
+1: "Account",
+529: "OrderRestrictions",
+18: "ExecInst",
+38: "OrderQty",
+40: "OrdType",
+44: "Price",
+54: "Side",
+60: "TransactTime",
+110: "MinQty",
+236: "Yield",
+59: "TimeInForce",
+432: "ExpireDate",
+126: "ExpireTime",
+1138: "DisplayQty",
+58: "Text",
+453: "NoPartyIDs",
+448: "PartyID",
+447: "PartyIDSource",
+452: "PartyRole",
+762: "SecuritySubType",
+55: "Symbol",
+
 //#region standard header
   8: "BeginString",
   9: "BodyLength",
