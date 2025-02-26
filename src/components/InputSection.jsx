@@ -30,7 +30,7 @@ const InputSection = () => {
   };
 
   return (
-    <div className="bg-neutral-800 p-4 rounded-sm shadow-md mx-60 mt-5">
+    <div className="bg-neutral-800 p-4 rounded-sm shadow-md mx-20 mt-5">
       <p className="text-white mb-2 text-sm">Paste EF FIX text below</p>
       <textarea
         className="w-full h-24 p-2 rounded-sm bg-gray-900 text-white border border-green-300 outline-0 text-xs"

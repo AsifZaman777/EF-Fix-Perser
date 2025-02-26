@@ -48,7 +48,7 @@ const ParseSection = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-60 mt-5 mb-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-20 mt-5 mb-20">
       {/* Left Table */}
       <div className="bg-gray-900 border border-gray-700 p-5 rounded-md shadow-md">
         <p className="mb-3 text-lg text-green-300 font-semibold">
@@ -78,7 +78,7 @@ const ParseSection = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-gray-600">
+            <tr className="border-b border-gray-600 hover:bg-gray-700">
               <td className="py-2 px-4">{processDate(messageInfo.time)}</td>
               <td className="py-2 px-4">{processTime(messageInfo.time)}</td>
               <td className="py-2 px-4">{messageInfo.sender}</td>
@@ -112,7 +112,7 @@ const ParseSection = () => {
           </thead>
           <tbody>
             {parsedData.map((data, index) => (
-              <tr key={index} className="border-b border-gray-600">
+              <tr key={index} className="border-b border-gray-600 hover:bg-gray-700">
                 <td className="py-2 px-4">{data.tag}</td>
                 <td className="py-2 px-4">{fixMapping[data.tag] || "N/A"}</td>
                 <td className="py-2 px-4">{data.value}</td>
