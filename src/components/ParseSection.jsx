@@ -17,7 +17,7 @@ const ParseSection = () => {
     const timeStr = time.slice(9); // "00:40:36.902"
 
     if (!timeStr.includes(":")) {
-      return "Invalid time format";
+      return "N/A";
     }
 
     let [hours, minutes, seconds = "00.000"] = timeStr.split(":");
@@ -35,7 +35,9 @@ const ParseSection = () => {
 
   function processDate(time) {
     const date = time.slice(0, 8); // "20250224"
-
+    if (date.length !== 8) {
+      return "N/A";
+    }
     //just use hiphen to separate the date
     const formattedDate = `${date.slice(0, 4)}-${date.slice(4, 6)}-${date.slice(
       6
