@@ -1,49 +1,41 @@
 export const valueDescMapping = {
+
+//#region message type 35
+35:{
+    0: "Heartbeat",
+    A: "Logon",
+    1: "Test Request",
+    2: "Resend Request",
+    3: "Reject",
+    4: "Sequence Reset",
+    5: "Logout",
+    D: "New Order",
+    F: "Order Cancel Request",
+    G: "Order Cancel / Replace Request",
+    H: "Order Status Request",
+    AE:"Trade Capture Report",
+    8:"Execution Report",
+    9:"Order Cancel Reject",
+    AR:"Trade Capture Report Ack",
+},
+//#endregion
+
   59: {
     0: "Day",
-    1: "Good Till Cancel",
+    1: "Good till cancelled",
     2: "At the Opening",
-    3: "Immediate or Cancel",
-    4: "Fill or Kill",
-    5: "Good Till Crossing",
-    6: "Good Till Date",
-    7: "At the Close"
+    3: "Immediate or Cancel (IOC)",
+    4: "Fill or Kill (FoK)",
+    6: "Good till date (GTD)",
   },
   54: {
     1: "Buy",
     2: "Sell",
-    3: "Buy minus",
-    4: "Sell plus",
-    5: "Sell short",
-    6: "Sell short exempt",
-    7: "Undisclosed",
-    8: "Cross",
-    9: "Cross short"
+    3: "Short sell"
   },
   40: {
     1: "Market",
     2: "Limit",
-    3: "Stop",
-    4: "Stop limit",
-    5: "Market on close",
-    6: "With or without",
-    7: "Limit or better",
-    8: "Limit with or without",
-    9: "On basis",
-    10: "On close",
-    11: "Limit on close",
-    12: "Forex - Market",
-    13: "Previously quoted",
-    14: "Previously indicated",
-    15: "Forex - Limit",
-    16: "Forex - Swap",
-    17: "Forex - Previously Quoted",
-    18: "Funari",
-    19: "Market if touched",
-    20: "Market with left over as limit",
-    21: "Previous Fund Valuation Point",
-    22: "Next Fund Valuation Point",
-    23: "Pegged"
   }
   // ...add more mappings as needed...
 };

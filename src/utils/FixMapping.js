@@ -1,5 +1,3 @@
-
-
 export const fixMapping = {
 
 //#region new order
@@ -28,15 +26,17 @@ export const fixMapping = {
 //#endregion
 
 //#region cancel order
-11: "ClOrdID",
 37: "OrderID",
 41: "OrigClOrdID",
-38: "OrderQty",
-54: "Side",
-60: "TransactTime",
 // #endregion
 
 //#region replace order
+11: "ClOrdID",
+37: "OrderID",
+41: "OrigClOrdID",
+1: "Account",
+529: "OrderRestrictions",
+18: "ExecInst",
 11: "ClOrdID",
 37: "OrderID",
 41: "OrigClOrdID",
@@ -93,9 +93,26 @@ export const fixMapping = {
 1138: "DisplayQty",
 58: "Text",
 897: "CopyMsgIndicator",
-
 //#endregion
 
+//#region Order Cancel Reject
+11: "ClOrdID",
+37: "OrderID",
+39: "OrdStatus",
+41: "OrigClOrdID",
+60: "TransactTime",
+102: "CxlRejReason",
+434: "CxlRejResponseTo",
+58: "Text",
+//#endregion
+
+//#region Order Status Request
+11: "ClOrdID",
+37: "OrderID",
+790: "OrdStatusReqID",
+55: "Symbol",
+54: "Side",
+//#endregion
 
 //#region standard header
   8: "BeginString",
@@ -128,7 +145,6 @@ export const fixMapping = {
 //#endregion
 
 
-
 //#region Logon
 98: "EncryptMethod",
 108: "HeartBtInt",
@@ -138,9 +154,6 @@ export const fixMapping = {
 1137: "DefaultApplVerID",
 58: "Text",
 //#endregion
-
-
-
 
 
 };

@@ -20,6 +20,7 @@
 /// Asif Zaman  26-Feb-2025 [FEATURE] Standard Trailer mapping
 /// Asif Zaman  26-Feb-2025 [FEATURE] Value Description mapping
 /// Asif Zaman  02-Mar-2025 [FEATURE] Execution Report mapping
+/// Asif Zaman  02-Mar-2025 [FEATURE] Value Description mapping design has been updated
 
 
 /// ==================================================================
