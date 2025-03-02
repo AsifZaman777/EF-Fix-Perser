@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ParseContext } from "../context/ParseContext";
 import { fixMapping } from "../utils/FixMapping";
-import { valueMapping } from "../utils/ValueDescMapping";
+import { valueDescMapping } from "../utils/ValueDescMapping";
 
 const ParseSection = () => {
   const { parsedData } = useContext(ParseContext);
@@ -116,7 +116,7 @@ const ParseSection = () => {
                 <td className="py-2 px-4">{data.tag}</td>
                 <td className="py-2 px-4">{fixMapping[data.tag] || "N/A"}</td>
                 <td className="py-2 px-4">{data.value}</td>
-                <td className="py-2 px-4">{valueMapping[data.value] || "-"}</td>
+                <td className="py-2 px-4">{valueDescMapping[data.tag]?.[data.value] || "-"}</td>
               </tr>
             ))}
           </tbody>
