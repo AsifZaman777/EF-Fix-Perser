@@ -55,6 +55,46 @@ export const fixMapping = {
 236: "Yield",
 1138: "DisplayQty",
 58: "Text",
+//#endregion
+
+//#region Execution report
+11: "ClOrdID",
+17: "ExecID",
+18: "ExecInst",
+37: "OrderID",
+41: "OrigClOrdID",
+150: "ExecType",
+790: "OrdStatusReqID",
+1: "Account",
+529: "OrderRestrictions",
+6: "AvgPx",
+14: "CumQty",
+31: "LastPx",
+32: "LastQty",
+38: "OrderQty",
+110: "MinQty",
+39: "OrdStatus",
+40: "OrdType",
+44: "Price",
+54: "Side",
+59: "TimeInForce",
+60: "TransactTime",
+75: "TradeDate",
+432: "ExpireDate",
+126: "ExpireTime",
+64: "SettlDate",
+574: "MatchType",
+103:"OrdRejReason",
+151: "LeavesQty",
+236: "Yield",
+381: "GrossTradeAmt",
+880: "TradeMatchID",
+1057: "AggressorIndicator",
+1138: "DisplayQty",
+58: "Text",
+897: "CopyMsgIndicator",
+
+//#endregion
 
 
 //#region standard header
@@ -86,6 +126,8 @@ export const fixMapping = {
 //#region standard trailer
 10: "CheckSum",
 //#endregion
+
+
 
 //#region Logon
 98: "EncryptMethod",
