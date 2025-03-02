@@ -1,5 +1,5 @@
 export const fixMapping = {
-  //#region Logon
+  //#region Logon 4.1
   98: "EncryptMethod",
   108: "HeartBtInt",
   141: "ResetSeqNumFlag",
@@ -33,7 +33,11 @@ export const fixMapping = {
   112: "TestReqID",
   //#endregion
 
-  //#region new order
+  //#region Infrastructure 4.2
+  379: "BusinessRejectRefID",
+  380: "BusinessRejectReason",
+
+  //#region new order 4.3
   11: "ClOrdID",
   1: "Account",
   529: "OrderRestrictions",
