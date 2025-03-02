@@ -1,120 +1,95 @@
 export const fixMapping = {
+  //#region Logon
+  98: "EncryptMethod",
+  108: "HeartBtInt",
+  141: "ResetSeqNumFlag",
+  553: "Username",
+  554: "Password",
+  1137: "DefaultApplVerID",
+  //#endregion
 
-//#region new order
-11: "ClOrdID",
-1: "Account",
-529: "OrderRestrictions",
-18: "ExecInst",
-38: "OrderQty",
-40: "OrdType",
-44: "Price",
-54: "Side",
-60: "TransactTime",
-110: "MinQty",
-236: "Yield",
-59: "TimeInForce",
-432: "ExpireDate",
-126: "ExpireTime",
-1138: "DisplayQty",
-58: "Text",
-453: "NoPartyIDs",
-448: "PartyID",
-447: "PartyIDSource",
-452: "PartyRole",
-762: "SecuritySubType",
-55: "Symbol",
-//#endregion
+  //#region Reject
+  45: "RefSeqNum",
+  371: "RefTagID",
+  372: "RefMsgType",
+  373: "SessionRejectReason",
+  //#endregion
 
-//#region cancel order
-37: "OrderID",
-41: "OrigClOrdID",
-// #endregion
+  //#region Resend Request
+  7: "BeginSeqNo",
+  16: "EndSeqNo",
+  //#endregion
 
-//#region replace order
-11: "ClOrdID",
-37: "OrderID",
-41: "OrigClOrdID",
-1: "Account",
-529: "OrderRestrictions",
-18: "ExecInst",
-11: "ClOrdID",
-37: "OrderID",
-41: "OrigClOrdID",
-1: "Account",
-529: "OrderRestrictions",
-18: "ExecInst",
-38: "OrderQty",
-40: "OrdType",
-44: "Price",
-54: "Side",
-60: "TransactTime",
-110: "MinQty",
-59: "TimeInForce",
-432: "ExpireDate",
-126: "ExpireTime",
-236: "Yield",
-1138: "DisplayQty",
-58: "Text",
-//#endregion
+  //#region Sequence Reset
+  123: "GapFillFlag",
+  36: "NewSeqNo",
+  //#endregion
 
-//#region Execution report
-11: "ClOrdID",
-17: "ExecID",
-18: "ExecInst",
-37: "OrderID",
-41: "OrigClOrdID",
-150: "ExecType",
-790: "OrdStatusReqID",
-1: "Account",
-529: "OrderRestrictions",
-6: "AvgPx",
-14: "CumQty",
-31: "LastPx",
-32: "LastQty",
-38: "OrderQty",
-110: "MinQty",
-39: "OrdStatus",
-40: "OrdType",
-44: "Price",
-54: "Side",
-59: "TimeInForce",
-60: "TransactTime",
-75: "TradeDate",
-432: "ExpireDate",
-126: "ExpireTime",
-64: "SettlDate",
-574: "MatchType",
-103:"OrdRejReason",
-151: "LeavesQty",
-236: "Yield",
-381: "GrossTradeAmt",
-880: "TradeMatchID",
-1057: "AggressorIndicator",
-1138: "DisplayQty",
-58: "Text",
-897: "CopyMsgIndicator",
-//#endregion
+  //#region Test Request
+  112: "TestReqID",
+  //#endregion
 
-//#region Order Cancel Reject
-11: "ClOrdID",
-37: "OrderID",
-39: "OrdStatus",
-41: "OrigClOrdID",
-60: "TransactTime",
-102: "CxlRejReason",
-434: "CxlRejResponseTo",
-58: "Text",
-//#endregion
+  //#region Heartbeat
+  112: "TestReqID",
+  //#endregion
 
-//#region Order Status Request
-11: "ClOrdID",
-37: "OrderID",
-790: "OrdStatusReqID",
-55: "Symbol",
-54: "Side",
-//#endregion
+  //#region new order
+  11: "ClOrdID",
+  1: "Account",
+  529: "OrderRestrictions",
+  18: "ExecInst",
+  38: "OrderQty",
+  40: "OrdType",
+  44: "Price",
+  54: "Side",
+  60: "TransactTime",
+  110: "MinQty",
+  236: "Yield",
+  59: "TimeInForce",
+  432: "ExpireDate",
+  126: "ExpireTime",
+  1138: "DisplayQty",
+  58: "Text",
+  453: "NoPartyIDs",
+  448: "PartyID",
+  447: "PartyIDSource",
+  452: "PartyRole",
+  762: "SecuritySubType",
+  55: "Symbol",
+  //#endregion
 
-//#region standard header
+  //#region cancel order
+  37: "OrderID",
+  41: "OrigClOrdID",
+  // #endregion
+
+  //#region Execution report
+  17: "ExecID",
+  150: "ExecType",
+  790: "OrdStatusReqID",
+  6: "AvgPx",
+  14: "CumQty",
+  31: "LastPx",
+  32: "LastQty",
+  39: "OrdStatus",
+  75: "TradeDate",
+  64: "SettlDate",
+  574: "MatchType",
+  103: "OrdRejReason",
+  151: "LeavesQty",
+  381: "GrossTradeAmt",
+  880: "TradeMatchID",
+  1057: "AggressorIndicator",
+  897: "CopyMsgIndicator",
+  //#endregion
+
+  //#region Order Cancel Reject
+  39: "OrdStatus",
+  102: "CxlRejReason",
+  434: "CxlRejResponseTo",
+  //#endregion
+
+  //#region standard header
   8: "BeginString",
   9: "BodyLength",
   35: "MsgType",
@@ -138,22 +113,9 @@ export const fixMapping = {
   122: "OrigSendingTime",
   347: "MessageEncoding",
   369: "LastMsgSeqNumProcessed",
-//#endregion
+  //#endregion
 
-//#region standard trailer
-10: "CheckSum",
-//#endregion
-
-
-//#region Logon
-98: "EncryptMethod",
-108: "HeartBtInt",
-141: "ResetSeqNumFlag",
-553: "Username",
-554: "Password",
-1137: "DefaultApplVerID",
-58: "Text",
-//#endregion
-
-
+  //#region standard trailer
+  10: "CheckSum",
+  //#endregion
 };
