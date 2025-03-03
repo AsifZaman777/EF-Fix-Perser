@@ -68,5 +68,27 @@ export const valueDescMapping = {
    44:"Order Entry Operator ID",
   },
 
+  39:{
+    0:"New",
+    1:"Partially filled",
+    2:"Filled",
+    3:"Done for day",
+    4:"Canceled",
+    5:"Replaced",
+    8:"Rejected",
+    C:"Expired",
+  },
+
+  434:{
+    1:"Order Cancel Request",
+    2:"Order Cancel/Replace Request",
+  },
+
+  102:{
+    1:"Unknown order",
+    6:"Duplicate order",
+    99:"Other",
+  }
+
  
 };

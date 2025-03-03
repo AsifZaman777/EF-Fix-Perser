@@ -75,7 +75,6 @@ export const fixMapping = {
   14: "CumQty",
   31: "LastPx",
   32: "LastQty",
-  39: "OrdStatus",
   75: "TradeDate",
   64: "SettlDate",
   574: "MatchType",
